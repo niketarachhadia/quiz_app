@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Quiz</title>
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href = "https://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet">
+  <link rel = "stylesheet" href = "./css/main.css">
+</head>
+<body>
+	<section class = "page start-page">
+		<h1>Test Your JavaScript Skills</h1>
+		<button class = "button start-quiz-button" type = "button">Start Quiz</button>
+	</section>
+
+	<section class = "page quiz-page">
+		<p class = "question"><span class "question#">1 </span>what is your name?</p>
+
+		<div class = "radio-toolbar">
+		</div> 
+		
+  		<div class="feedback">
+  			 <span class="feedback-message"></span>
+  		</div>
+  		<div class="next">
+  		<button class="button next-button" type="button">Next</button>	
+  		</div>
+  		<div class="current-question">
+			<p><span class="current-question-no"></span>Out of 10</p>
+		</div>
+
+		<div class="current-score">
+			<strong>Current Score:</strong>
+			<p>Correct:<span class="correct"></span></p>
+			<p>Incorrect:<span class="in-correct"></span></p>
+		</div>
+	</section>
+	<section class="page result-page">
+		<h2>Congratulations!</h2>
+		<p>Your final score:<span class="final-correct"></span>/100</p>
+		<button type="button" class="button try-again-button">Try Again!</button>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./js/data.js"></script>
+</body>
+</html>
